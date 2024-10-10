@@ -35,7 +35,9 @@ main>p:first-of-type>img {float:right; margin-left:10px;}
 main>p:last-of-type>img  {float:left; margin-right:10px;}
 main>p::first-letter {font-size:1.5rem; font-weight:bold; color:#499b00;}
 
-main>ol	{color:#499b00; list-style-position:inside; margin-bottom:10px; background:url("../images/bg.jpg") no-repeat left bottom / contain;}
+main>img {float: left;}
+main>ol	{color:#499b00; list-style-position:inside; margin-bottom:10px; }
+main>ol>li {float: right;}
 
 main>figure {margin-top:20px;}
 main>figure>img {width:95%; margin:auto; display:block; border-radius:20px; box-shadow:2px 2px 5px black;}
@@ -48,19 +50,18 @@ aside>h2 {font-family: "Gugi", sans-serif;}
 
 /* 하단 */
 footer {text-align: center; max-width:500px; margin:auto; padding:15px; background:#ddd; }
-footer>p {font-style: italic;}
+footer>p>span {font-style: italic;}
 
 
 /* 위로 */
 #layout>a	{position:fixed; right:calc(((100% - 500px) / 2 ) + 5px); bottom:10px; background:white; box-shadow:0 0 5px black; border-radius:5px;}
 #layout>a:hover {background:#e2ef97}
 
-/***********************************************/
-/*넓이가 500픽셀 이하인 기계장치*/
+
+/*넓이가 500px 이하*/
 @media(max-width:500px) {
 		#layout>a {right:5px;}
 }
-
 
 
 
